@@ -74,6 +74,12 @@ body a {
     padding: 0 16px;
   }
 }
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 120px;
+}
+
 .header {
   padding-top: 12px;
   display: grid;
@@ -84,6 +90,9 @@ body a {
 }
 
 @media (max-width: 1023px) {
+  .header {
+    display: flex;
+  }
   .header__logo svg {
     width: 50px;
     height: 55px;
@@ -116,6 +125,9 @@ body a {
   grid-column-start: 16;
   grid-column-end: 19;
   text-align: end;
+}
+.header__tel:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1023px) {
@@ -210,6 +222,20 @@ body a {
 }
 .menu.open {
   transform: translateX(0);
+}
+
+.outer {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.outer.open {
+  display: block;
+  z-index: 0;
 }
 
 .menu__logo {
