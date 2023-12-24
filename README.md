@@ -1,1 +1,1 @@
-Solution https://anatolygess.github.io/Aveji/
+Solution https://anatolygess.github.io/Aveji/dist/
