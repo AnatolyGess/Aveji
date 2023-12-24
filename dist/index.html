@@ -44,7 +44,7 @@
 </header>
   </div>
   <main>
-    <section class="welcome">
+    <section class="welcome" id="home">
 
     <div class="container">
 
@@ -61,7 +61,7 @@
     </div>
 
 </section>
-    <section class="about">
+    <section class="about" id="about">
     <div class="container">
         <div class="about__container">
 
@@ -98,7 +98,7 @@
     </div>
 
 </section>
-    <section class="work">
+    <section class="work" id="works">
     <div class="container">
         <div class="work__container">
 
@@ -144,13 +144,13 @@
         </div>
     </div>
 </section>
-    <section class="projects">
+    <section class="projects" id="projects">
     <div class="projects__container">
 
         <h2 class="projects__head heading">Проекты</h2>
         <div class="projects__slider slider">
             <div class="slider__wrapper">
-                <!-- Слайдер -->
+                <!-- Слайды -->
                 <div class="slider__slide">
                     <div class="slider__image">
                         <img src="img/projects/01.jpg" alt="">
@@ -211,14 +211,96 @@
                     </div>
                     <a href="#!" class="slider__link"></a>
                 </div>
-                <!-- Слайдер -->
+                <!-- Слайды -->
             </div>
         </div>
 
     </div>
 </section>
-    
-    
+    <section class="feedback" id="feedback">
+    <div class="container">
+        <h2 class="feedback__head heading">
+            Отзывы
+        </h2>
+        <div class="feedback__replies replies">
+            <div class="replies__card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" class="">
+                    <path
+                        d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z"
+                        fill="#212529" />
+                </svg>
+                <h3 class="replies__title">
+                    Анна Антонова
+                </h3>
+                <div class="replies__text text">
+                    Обратилась к Aveji по рекомендации. Команда сразу поняла, какой дизайн я хочу. Предоставили
+                    несколько вариантов и в течение недели сделали наброски. Итог понравился, все на высшем уровне.
+                </div>
+            </div>
+            <div class="replies__card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" class="">
+                    <path
+                        d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z"
+                        fill="#212529" />
+                </svg>
+                <h3 class="replies__title">
+                    Ольга Иванова
+                </h3>
+                <div class="replies__text text">
+                    После пары заказов у компании Aveji убедилась, что за мебелью теперь только к ним. Абсолютно любые
+                    решения, в любых размерах и форм-факторе, то что нужно!
+                </div>
+            </div>
+            <div class="replies__card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" class="">
+                    <path
+                        d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z"
+                        fill="#212529" />
+                </svg>
+                <h3 class="replies__title">
+                    Аркадий Макаров
+                </h3>
+                <div class="replies__text text">
+                    Aveji — настоящие профессионалы своего дела. Быстро поняли мою задумку, сделали дизайн, согласовали
+                    и изготовили мебель. А потом еще и бесплатно все собрали на месте. Большое спасибо!
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="contact" id="contact">
+    <div class="container">
+        <div class="contact__container">
+
+            <div class="contact__image">
+                <img src="img/contact/01.jpg" alt="Презентабельная команата в тёмных тонах">
+            </div>
+            <div class="contact__content">
+                <h2 class="contact__head heading">
+                    Хотите заказать проект?
+                </h2>
+                <p class="contact__text text">
+                    Оставьте заявку, и мы вам перезвоним
+                </p>
+                <form action="post" class="contact__form" name="contact-form">
+                    <input type="text" name="name" placeholder="Имя" class="contact__form-name" required>
+                    <input type="email" name="email" placeholder="E-mail" class="contact__form-email" required>
+                    <input type="tel" name="tel" placeholder="Телефон" class="contact__form-tel" required>
+                    <button type="submit" class="text">Отправить заявку</button>
+                </form>
+                <div class="contact__social">
+                    <a href="#!" class="contact__social-link">
+                        <img src="img/contact/AppStore.svg" alt="Картинка App Store">
+                    </a>
+                    <a href="#!" class="contact__social-link">
+                        <img src="img/contact/GooglePlay.svg" alt="Картинка Google Play">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
   </main>
   <footer></footer>
 
